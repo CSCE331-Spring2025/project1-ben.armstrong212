@@ -2,13 +2,13 @@
     justify-self: left;
     text-align: left;
     h1 {
-        margin-left: 30px;
+        margin-left: 0px;
     }
 }
 
 body {
     padding: 25px;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     color: white;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,8 +16,8 @@ body {
 }
 /*navigation bar*/
 .nav-bar {
-    background-color: #024673;
-    width: 95%;
+    background-color:cornflowerblue;
+    width: 100%;
     justify-self: center;
     position: sticky;
     top: 0;
@@ -27,11 +27,13 @@ body {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #024673;
+        background-color: cornflowerblue;
     }
     li {
         float: left;
         border-right: 1px solid #bbb;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
     }
     li:last-child {
         border-right: none;
@@ -44,10 +46,10 @@ body {
         text-decoration: none;
     }
     li a:hover {
-        background-color: #015f9e;
+        background-color: rgb(106, 157, 252);
     }
     .active {
-        background-color: #013355;
+        background-color: rgb(88, 131, 211);
     }
 }
 /*not-fixed width container*/
@@ -57,8 +59,7 @@ body {
     justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 10px;
-    column-gap: 20px;
-    width: 95%;
+    width: 100%;
     justify-self: center;
     text-align: center;
 
@@ -77,6 +78,10 @@ body {
     .flex-text {
         align-self: center;
         font-size: 20px;
+        background-color:cornflowerblue;
+        border-radius: 10px 10px;
+        box-shadow: #bbb;
+        padding: 10px;
     }
 }
 
@@ -88,6 +93,11 @@ body {
 
     p {
         padding: 0%;
+    }
+
+    hr{
+        text-align: center;
+        justify-self: center;
     }
 }
 
@@ -166,6 +176,12 @@ body {
 
 .project {
     text-align: left;
+    background-color:cornflowerblue;
+    border-radius: 10px 10px;
+    box-shadow: #bbb;
+    padding: 10px;
+    margin-bottom: 10px;
+
     .name {
         display: inline;
         font-size: 30px;
@@ -193,6 +209,10 @@ a.plain-link{
     text-decoration:none; 
 }
 
+a.white-link{
+    color: white;
+}
+
 .logo {
     img {
         background-color: white;
@@ -203,3 +223,23 @@ a.plain-link{
 h4.inline {
     display: inline;
 }
+
+.color-box {
+    background-color:cornflowerblue;
+    border-radius: 10px 10px;
+    box-shadow: #bbb;
+    padding: 10px 20px;
+
+    h4 {
+        margin-top: 0;
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFF;
+ }
