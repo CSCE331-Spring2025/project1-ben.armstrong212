@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <link id="theme" rel="stylesheet" type="text/css" href="style1.css" />
+        <script type="text/javascript" src="scripts.js"></script>
         <div class="title"><h1>Ben Armstrong</h1></div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="navbar">
             <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Technical Portfolio</a></li>
                 <li><a href="qualifications.html">Qualifications</a></li>
@@ -12,8 +14,10 @@
                 <li><a href="genai.html">Generative AI</a></li>
             </ul>
         </div>
+        <button onclick="toggleTheme()">Change Theme</button>
     </head>
     <body>
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
         <div class="flex-container">
             <div class="flex-image">
                 <img src="images/BenHeadshot.jpg">
