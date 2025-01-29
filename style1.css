@@ -100,7 +100,7 @@ button {
 }
 
 /*not-fixed width container*/
-.flex-container {
+.flex-container-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -133,7 +133,7 @@ button {
     }
 }
 
-.flex-container-column {
+.flex-container-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -163,7 +163,7 @@ button {
     }
 }
 
-.flex-container-column-fill {
+.flex-container-3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

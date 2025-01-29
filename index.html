@@ -2,7 +2,7 @@
 <html>
     <head>
         <link id="theme" rel="stylesheet" type="text/css" href="style1.css" />
-        <script type="text/javascript" src="scripts.js"></script>
+        <script defer type="text/javascript" src="scripts.js"></script>
         <div class="title"><h1>Ben Armstrong</h1></div>
         <div class="nav-bar" id="navbar">
             <ul>
@@ -14,11 +14,11 @@
                 <li><a href="genai.html">Generative AI</a></li>
             </ul>
         </div>
-        <button onclick="toggleTheme()">Change Theme</button>
     </head>
     <body>
+        <button id="theme-toggle" onclick="toggleTheme()">Change Theme</button>
         <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
-        <div class="flex-container">
+        <div class="flex-container-1">
             <div class="flex-image">
                 <img src="images/BenHeadshot.jpg">
             </div>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <br>
-        <div class="flex-container">
+        <div class="flex-container-1">
             <div class="flex-text">
                 <p>I have plenty of experience working in teams, from school projects, to past internships, to my experience as a boy scout. I take pride in my ability to lead and guide a team to obtain goals and exceed expectations. I greatly enjoy the experience of tackling new and constantly changing challenges alongside my peers.</p>
             </div>

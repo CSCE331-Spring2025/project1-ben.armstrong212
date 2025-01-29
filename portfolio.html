@@ -14,14 +14,16 @@
                 <li><a href="genai.html">Generative AI</a></li>
             </ul>
         </div>
-        <button onclick="toggleTheme()">Change Theme</button>
     </head>
     <body>
+        <button id="theme-toggle" onclick="toggleTheme()">Change Theme</button>
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
     <!-- 2 row container-->
-        <div class="flex-container">
+        <div class="flex-container-1">
             <!--row 1 container-->
-            <div class="flex-container-column">
-                <h2>Internships</h2>
+            <div class="flex-container-2">
+                <h2 class="title">Internships</h2>
+                <!--need to add another container here for styling-->
                 <div class="project">
                     <a class="plain-link" href="https://www.bakerhughes.com/">
                         <span class="name">Baker Hughes - </span>
@@ -52,7 +54,7 @@
                 </div>
             </div>
             <!--row 2 container-->
-            <div class="flex-container-column">
+            <div class="flex-container-2">
                 <h2>Projects</h2>
                 <div class="project">
                     <span class="name">Computer Architecture</span>

@@ -1,27 +1,27 @@
 function toggleTheme() {
-    // Select the <link> element
-    let theme = document.getElementById('theme');
+    const stylesheetLink = document.getElementById("theme");
+    const themeToggleButton = document.getElementById("theme-toggle");
+    const lightTheme = "style1.css";
+    const darkTheme = "style2.css";
 
-    if (theme.getAttribute('href') == 'style1.css') {
-        theme.setAttribute('href', 'style2.css');
-    } else {
-        theme.setAttribute('href', 'style1.css');
-    }
-    // localStorage.setItem('Style', theme.getAttribute('href'))
+    // Determine the new theme
+    const newTheme = stylesheetLink.getAttribute("href") === lightTheme ? darkTheme : lightTheme;
+    
+    // Apply the new theme and store it
+    stylesheetLink.setAttribute("href", newTheme);
+    localStorage.setItem("selectedTheme", newTheme);
 }
 
-// function getStyle(){
-//     let theme = localStorage.getItem("Style") || 'style1.css';
-//     theme.setAttribute('href', theme);
-// }
+// Set initial theme on page load
+(function () {
+    const storedTheme = localStorage.getItem("selectedTheme") || "style1.css";
+    document.getElementById("theme").setAttribute("href", storedTheme);
+})();
 
-
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+//vertical nav bar stuff
 function openNav() {
     document.getElementById("navbar").style.width = "250px";
-    // document.getElementById("main").style.marginLeft = "250px";
   }
   function closeNav() {
     document.getElementById("navbar").style.width = "0";
-    // document.getElementById("main").style.marginLeft = "0";
   }
