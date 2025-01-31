@@ -2,8 +2,9 @@
 <html>
     <head>
         <div class="title"><h1>Ben Armstrong</h1></div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="navbar">
             <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <li><a class="active" href="index_HTML.html">Home</a></li>
                 <li><a href="portfolio_HTML.html">Technical Portfolio</a></li>
                 <li><a href="qualifications_HTML.html">Qualifications</a></li>
@@ -12,25 +13,28 @@
         </div>
     </head>
     <body>
-        <div class="flex-container">
+        <button id="theme-toggle" onclick="toggleTheme()">Change Theme</button>
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        <div class="flex-container-1">
             <div class="flex-image">
                 <img src="images/BenHeadshot.jpg">
             </div>
             <div class="flex-text">
-                <p>I am a junior in computer engineering here at Texas A&M University. I really enjoy learning about academic topics such as mathematics, including control theory, PDEs, and perturbation method, physical sciences, such as physics and chemistry, and engineering as a whole. Outside of class, I enjoy reading, playing video games, and traveling, and I've even been to all 50 states in the US.</p>
+                <p>I am a junior in computer engineering at Texas A&M University. I really enjoy learning about academic topics such as mathematics, including control theory, PDEs, and perturbation method, physical sciences, such as physics and chemistry, and engineering as a whole. Outside of class, I enjoy reading, playing video games, and traveling, and I've even been to all 50 states in the US.</p>
             </div>
         </div>
-        <br>
-        <div class="flex-container">
+        <div class="flex-container-1">
             <div class="flex-text">
                 <p>I have plenty of experience working in teams, from school projects, to past internships, to my experience as a boy scout. I take pride in my ability to lead and guide a team to obtain goals and exceed expectations. I greatly enjoy the experience of tackling new and constantly changing challenges alongside my peers.</p>
             </div>
         </div>
-        <hr width="30%">
+    </body>
+    <footer>
         <div class="links">
             <p><b>Contact Me:</b></p>
-            <p><a href="https://www.linkedin.com/in/ben-armstrong-027b55263/">LinkedIn</a></p>
-            <p><a href="mailto:ben.armstrong212@tamu.edu">Email</a></p>
+            <link-wrapper><p><a class="white-link" href="https://www.linkedin.com/in/ben-armstrong-027b55263/">LinkedIn</a></p></link-wrapper>
+            <link-wrapper><p><a class="white-link" href="mailto:ben.armstrong212@tamu.edu">Email</a>: ben.armstrong212@tamu.edu</p></link-wrapper>
         </div>
-    </body>
+        <br>
+    </footer>
 </html>
