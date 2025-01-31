@@ -14,6 +14,47 @@ footer {
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: black;
+
+
+    .links {
+      font-size: 20px;
+      justify-self: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+        
+      flex-direction: row;
+  
+      link-wrapper {
+        width: auto; 
+        height: 32px;
+        border-radius: 20px; 
+        border-style: solid;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: white; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .link-wrapper p{
+        padding: 0%;
+        margin: 0;
+      }
+  
+      hr{
+          text-align: center;
+          justify-self: center;
+      }
+  }
 }
 
 /* navigation bar */
@@ -80,6 +121,7 @@ footer {
 
   .color-box {
     background-color: white;
+    font-size: 20px;
     border-radius: 10px 10px;
     box-shadow: #bbb;
     padding: 10px 20px;
@@ -130,8 +172,13 @@ button {
       width: 100%;
 
       img {
-          max-width: 100%;
+          max-width: 50%;
           max-height: 100%;
+          background-color: white;
+          border-radius: 10px 10px;
+          box-shadow: #bbb;
+          padding: 10px 20px;
+          margin-bottom: 10px;
       }
   }
      
@@ -147,7 +194,7 @@ button {
 .flex-container-2 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 95%;
@@ -177,9 +224,10 @@ button {
       margin-bottom: 10px;
   }
 }
+
 .flex-container-3 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -220,6 +268,132 @@ button {
       text-align: left;
       margin-top: 5px;
   }
+  iframe {
+    margin-right: 10px;
+  }
+
+}
+
+.flex-container-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 95%;
+  justify-self: center;
+  font-size: 20px;
+
+  hr {
+      width: 100%;
+      margin-top: 2;
+      margin-bottom: 0;
+      padding: 0; 
+  }
+
+  h2.title {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+      margin-bottom: 0;
+  }
+  p {
+      text-align: left;
+      margin-top: 5px;
+  }
+
+  ul li{
+      margin-bottom: 10px;
+  }
+}
+
+.flex-container-5 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  width: 100%;
+  min-width: 20%;
+  justify-self: center;
+  font-size: 20px;
+
+  ul {
+      width: auto;
+      margin-top: 5px;
+      text-align: left;
+  }
+  ul li{
+      width: auto;
+      font-size: 15px;
+      margin-top: 5px;
+  }
+
+  .title {
+      font-size: 30px;
+  }
+
+  hr {
+      width: 100%;
+      margin-top: 2;
+      margin-bottom: 0;
+      padding: 0; 
+  }
+  hr.divider { 
+      margin: 0em;
+      border-width: 2px;
+  }
+  h4 {
+      margin-bottom: 0;
+  }
+  p {
+      text-align: left;
+      margin-top: 5px;
+  }
+  iframe {
+    width: 97.5%;
+    margin-right: 10px;
+  }
+
+}
+
+.flex-container-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-self: center;
+  text-align: center;
+  font-size: 20px;
+
+  .flex-image {
+      order: 1;
+      display: flex;
+      justify-content: center;
+      border: #bbb;
+      padding-right: 10px;
+      width: auto;
+
+      img {
+          max-width: 100%;
+          max-height: 100%;
+      }
+    .color-box {
+      order: 2;
+    }
+  }
+     
+  .flex-text {
+      align-self: center;
+      background-color:cornflowerblue;
+      border-radius: 10px 10px;
+      box-shadow: #bbb;
+      padding: 10px;
+  }
 }
 
 .project {
@@ -227,10 +401,10 @@ button {
   background-color: white;
   color: black;
   border-radius: 10px 10px;
-  box-shadow: #bbb;
-  width: 95%; 
+  width: auto;
+  text-align: left; 
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 
   .name {
       display: inline;
